@@ -9,4 +9,4 @@ elif mod == 0:
     str = "0"
 elif mod < 6 and not 0:
     str = "less than 6 and not 0"
-print(f"Last digit of {number:d} is {mod:d} and is {str}")
+print(f"Last digit of {number:d} is {mod:d} and is {str:s}")
