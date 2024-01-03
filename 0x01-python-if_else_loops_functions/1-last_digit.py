@@ -2,7 +2,10 @@
 import random
 
 number = random.randint(-10000, 10000)
-mod = number % 10
+if number >= 0:
+    mod = number % 10
+else:
+    mod = number % -10
 if mod > 5:
     str = "greater than 5"
 elif mod == 0:
