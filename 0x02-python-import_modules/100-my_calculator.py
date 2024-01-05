@@ -24,7 +24,7 @@ if __name__ == "__main__":
                 sub(int(sys.argv[1]), int(sys.argv[3])),
             )
         )
-    elif sys.argv[2] == "*":
+    elif sys.argv[2] == '*':
         print(
             "{:d} {} {:d} = {:d}".format(
                 int(sys.argv[1]),
