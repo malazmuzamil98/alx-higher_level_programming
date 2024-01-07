@@ -4,5 +4,5 @@ def no_c(my_string):
     removed_char_str = ""
     for char in my_string:
         if char not in un_char:
-           removed_char_str += char
+            removed_char_str += char
     return (removed_char_str)
