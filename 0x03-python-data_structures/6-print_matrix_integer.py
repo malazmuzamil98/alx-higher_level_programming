@@ -1,12 +1,18 @@
 #!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    if len(matrix) == 0:
-        pass
-    for row in matrix:
-        i = 0
-        for element in row:
-            if i < len(row) - 1:
-                print("{:d}".format(element), end=' ')
-            else:
-                print("{:d}".format(element))
+    for row in range(len(matrix)):
+        for element in range(len(matrix[row])):
+            if element != 0:
+                print(" ", end='')
+            print("{:d}".format(matrix[row][element]), end='')
         print()
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print_matrix_integer(matrix)
+print("--")
+print_matrix_integer()
