@@ -27,5 +27,5 @@ class Square:
             integer: returns the area of the square which is hight * width
             in the square case they are equal and equals the size
         """
-    
+
         return self.__size * self.__size
