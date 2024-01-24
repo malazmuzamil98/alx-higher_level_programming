@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-"""_summary_"""
+"""A module for a square class"""
 
 
 class Square:
-    """_summary_"""
+    """A class that defines a square"""
 
     pass
