@@ -1,14 +1,13 @@
 #!/usr/bin/python3
 """
-
 This module contains an algorithm that resolves the N-Queen puzzle
 using backtracking
-
 """
 
 
 def isSafe(m_queen, nqueen):
-    """ Method that determines if the queens can or can't kill each other
+    """
+    Method that determines if the queens can or can't kill each other
 
     Args:
         m_queen: array that has the queens positions
@@ -32,7 +31,8 @@ def isSafe(m_queen, nqueen):
 
 
 def print_result(m_queen, nqueen):
-    """ Method that prints the list with the Queens positions
+    """
+    Method that prints the list with the Queens positions
 
     Args:
         m_queen: array that has the queens positions
@@ -49,7 +49,8 @@ def print_result(m_queen, nqueen):
 
 
 def Queen(m_queen, nqueen):
-    """ Recursive function that executes the Backtracking algorithm
+    """
+    Recursive function that executes the Backtracking algorithm
 
     Args:
         m_queen: array that has the queens positions
@@ -74,7 +75,8 @@ def Queen(m_queen, nqueen):
 
 
 def solveNQueen(size):
-    """ Function that invokes the Backtracking algorithm
+    """ 
+    Function that invokes the Backtracking algorithm
 
     Args:
         size: size of the chessboard
