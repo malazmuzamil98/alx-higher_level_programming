@@ -83,4 +83,4 @@ class Rectangle:
         """
         if self.width == 0 or self.height == 0:
             self.perimeter = 0
-        return 2 * (self.width + self.height)
+        self.perimeter = 2 * (self.width + self.height)
