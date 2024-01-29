@@ -30,6 +30,12 @@ def isSafe(m_queen, nqueen):
     return True
 
 
+"""
+This module contains an algorithm that resolves the N-Queen puzzle
+using backtracking
+"""
+
+
 def print_result(m_queen, nqueen):
     """
     Method that prints the list with the Queens positions
@@ -46,6 +52,12 @@ def print_result(m_queen, nqueen):
         res.append([i, m_queen[i]])
 
     print(res)
+
+
+"""
+This module contains an algorithm that resolves the N-Queen puzzle
+using backtracking
+"""
 
 
 def Queen(m_queen, nqueen):
@@ -75,7 +87,7 @@ def Queen(m_queen, nqueen):
 
 
 def solveNQueen(size):
-    """ 
+    """
     Function that invokes the Backtracking algorithm
 
     Args:
