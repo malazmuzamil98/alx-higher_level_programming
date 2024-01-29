@@ -41,12 +41,6 @@ def print_result(m_queen, nqueen):
     print(res)
 
 
-"""
-This module contains an algorithm that resolves the N-Queen puzzle
-using backtracking
-"""
-
-
 def Queen(m_queen, nqueen):
     """_summary_
 
