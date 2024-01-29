@@ -47,6 +47,36 @@ using backtracking
 """
 
 
+def Queen(m_queen, nqueen):
+    """_summary_
+
+    Args:
+        m_queen (_type_): _description_
+        nqueen (_type_): _description_
+    """
+
+    if nqueen is len(m_queen):
+        print_result(m_queen, nqueen)
+        return
+
+    m_queen[nqueen] = -1
+
+    while((m_queen[nqueen] < len(m_queen) - 1)):
+
+        m_queen[nqueen] += 1
+
+        if isSafe(m_queen, nqueen) is True:
+
+            if nqueen is not len(m_queen):
+                Queen(m_queen, nqueen + 1)
+
+
+"""
+This module contains an algorithm that resolves the N-Queen puzzle
+using backtracking
+"""
+
+
 def solveNQueen(size):
     """_summary_
 
