@@ -41,31 +41,22 @@ def print_result(m_queen, nqueen):
     print(res)
 
 
-"""
-This module contains an algorithm that resolves the N-Queen puzzle
-using backtracking
-"""
+if __name__ == '__main__':
 
+    import sys
 
-def Queen(m_queen, nqueen):
-    """_summary_
+    if len(sys.argv) == 1 or len(sys.argv) > 2:
+        print("Usage: nqueens N")
+        sys.exit(1)
 
-    Args:
-        m_queen (_type_): _description_
-        nqueen (_type_): _description_
-    """
+    try:
+        size = int(sys.argv[1])
+    except Exception:
+        print("N must be a number")
+        sys.exit(1)
 
-    if nqueen is len(m_queen):
-        print_result(m_queen, nqueen)
-        return
+    if size < 4:
+        print("N must be at least 4")
+        sys.exit(1)
 
-    m_queen[nqueen] = -1
-
-    while((m_queen[nqueen] < len(m_queen) - 1)):
-
-        m_queen[nqueen] += 1
-
-        if isSafe(m_queen, nqueen) is True:
-
-            if nqueen is not len(m_queen):
-                Queen(m_queen, nqueen + 1)
+    solveNQueen(size)
