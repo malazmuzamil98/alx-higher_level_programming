@@ -1,12 +1,24 @@
 #!/usr/bin/python3
 """
+
 This module contains an algorithm that resolves the N-Queen puzzle
 using backtracking
+
 """
 
 
 def isSafe(m_queen, nqueen):
-    """Method that determines if the queens can or can't kill each other"""
+    """ Method that determines if the queens can or can't kill each other
+
+    Args:
+        m_queen: array that has the queens positions
+        nqueen: queen number
+
+    Returns:
+        True: when queens can't kill each other
+        False: when some of the queens can kill
+
+    """
 
     for i in range(nqueen):
 
@@ -19,18 +31,13 @@ def isSafe(m_queen, nqueen):
     return True
 
 
-"""
-This module contains an algorithm that resolves the N-Queen puzzle
-using backtracking
-"""
-
-
 def print_result(m_queen, nqueen):
-    """_summary_
+    """ Method that prints the list with the Queens positions
 
     Args:
-        m_queen (_type_): _description_
-        nqueen (_type_): _description_
+        m_queen: array that has the queens positions
+        nqueen: queen number
+
     """
 
     res = []
@@ -42,11 +49,12 @@ def print_result(m_queen, nqueen):
 
 
 def Queen(m_queen, nqueen):
-    """_summary_
+    """ Recursive function that executes the Backtracking algorithm
 
     Args:
-        m_queen (_type_): _description_
-        nqueen (_type_): _description_
+        m_queen: array that has the queens positions
+        nqueen: queen number
+
     """
 
     if nqueen is len(m_queen):
@@ -65,17 +73,12 @@ def Queen(m_queen, nqueen):
                 Queen(m_queen, nqueen + 1)
 
 
-"""
-This module contains an algorithm that resolves the N-Queen puzzle
-using backtracking
-"""
-
-
 def solveNQueen(size):
-    """_summary_
+    """ Function that invokes the Backtracking algorithm
 
     Args:
-        size (_type_): _description_
+        size: size of the chessboard
+
     """
 
     m_queen = [-1 for i in range(size)]
@@ -93,7 +96,7 @@ if __name__ == '__main__':
 
     try:
         size = int(sys.argv[1])
-    except Exception:
+    except:
         print("N must be a number")
         sys.exit(1)
 
