@@ -16,6 +16,11 @@ class Rectangle:
         self.height = height
 
     def __str__(self):
+        """prints the Rectangle
+
+        Returns:
+            str: a string
+        """
         string = ""
         if self.width == 0 or self.height == 0:
             return string
