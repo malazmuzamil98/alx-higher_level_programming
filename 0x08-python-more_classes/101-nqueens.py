@@ -59,34 +59,3 @@ def Queen(m_queen, nqueen):
                 Queen(m_queen, nqueen + 1)
 
 
-def solveNQueen(size):
-    """_summary_
-
-    Args:
-        size (_type_): _description_
-    """
-
-    m_queen = [-1 for i in range(size)]
-
-    Queen(m_queen, 0)
-
-
-if __name__ == '__main__':
-
-    import sys
-
-    if len(sys.argv) == 1 or len(sys.argv) > 2:
-        print("Usage: nqueens N")
-        sys.exit(1)
-
-    try:
-        size = int(sys.argv[1])
-    except Exception:
-        print("N must be a number")
-        sys.exit(1)
-
-    if size < 4:
-        print("N must be at least 4")
-        sys.exit(1)
-
-    solveNQueen(size)
