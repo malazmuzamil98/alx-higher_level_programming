@@ -28,6 +28,14 @@ class Rectangle:
             string += ("#" * self.width) + "\n"
         return string[:-1]
 
+    def __repr__(self):
+        """
+
+        Returns:
+            str: a string representation of the rectangle
+        """
+        return "Rectangle({}, {})".format(self.width, self.height)
+
     @property
     def width(self):
         """ width getter
