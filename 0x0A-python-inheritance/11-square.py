@@ -30,5 +30,9 @@ class Square(Rectangle):
         """
         return super().area()
     def __str__(self):
-        """_summary_"""
-        return super().__str__()
+        """_str_
+
+        Returns:
+            _type_: _description_
+        """
+        return ("[Square] {}/{}".format(self.__size, self.__size))
