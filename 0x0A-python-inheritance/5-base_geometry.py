@@ -8,4 +8,3 @@ class BaseGeometry:
     This is the base class for all geometric shapes
     """
     pass
-
