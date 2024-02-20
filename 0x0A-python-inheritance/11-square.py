@@ -29,6 +29,7 @@ class Square(Rectangle):
         This is the area method
         """
         return super().area()
+
     def __str__(self):
         """_str_
 
