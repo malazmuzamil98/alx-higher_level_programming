@@ -2,9 +2,8 @@
 """_summary_"""
 
 
-class Base():
-    """_summary_
-    """
+class Base:
+    """_summary_"""
 
     __nb_objects = 0
 

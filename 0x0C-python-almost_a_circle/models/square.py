@@ -3,6 +3,8 @@
 
 
 from rectangle import Rectangle
+
+
 class Square(Rectangle):
     """_summary_
 
@@ -30,7 +32,7 @@ class Square(Rectangle):
             _type_: _description_
         """
 
-        return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}")
+        return f"[Square] ({self.id}) {self.x}/{self.y} - {self.size}"
 
     @property
     def size(self):
@@ -70,7 +72,7 @@ class Square(Rectangle):
                 self.x = args[2]
             if len(args) >= 4:
                 self.y = args[3]
-        elif kwargs:    
+        elif kwargs:
             self.id = kwargs.get("id", self.id)
             self.height = kwargs.get("size", self.height)
             self.width = kwargs.get("size", self.width)
@@ -84,9 +86,4 @@ class Square(Rectangle):
             _type_: _description_
         """
 
-        return {
-        'id': self.id,
-        'x': self.x,
-        'size': self.size,
-        'y': self.y
-    }
+        return {"id": self.id, "x": self.x, "size": self.size, "y": self.y}

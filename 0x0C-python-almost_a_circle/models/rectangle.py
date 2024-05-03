@@ -3,6 +3,8 @@
 
 
 from base import Base
+
+
 class Rectangle(Base):
     """_summary_
 
@@ -93,7 +95,6 @@ class Rectangle(Base):
             x_value (_type_): _description_
         """
 
-        
         if not isinstance(x_value, int):
             raise TypeError("x must be an integer")
         if x_value < 0:
@@ -125,22 +126,20 @@ class Rectangle(Base):
         self.__y = y_value
 
     def area(self):
-        """_summary_
-        """
+        """_summary_"""
 
         return self.__height * self.__width
 
     def display(self):
-        """_summary_
-        """
+        """_summary_"""
 
-        for l in range(self.__y):
+        for i in range(self.__y):
             print()
         for i in range(self.__height):
             for k in range(self.__x):
-                print(" ", end='')
+                print(" ", end="")
             for j in range(self.__width):
-                print("#", end='')
+                print("#", end="")
             print()
 
     def __str__(self):
@@ -150,17 +149,17 @@ class Rectangle(Base):
             _type_: _description_
         """
 
-        return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
+        return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} -" \
+            "{self.__width}/{self.__height}"
 
     def update(self, *args, **kwargs):
-        """_summary_
-        """
+        """_summary_"""
 
         if args is not None:
-            self.__width = kwargs.get('width', self.__width)
-            self.__height = kwargs.get('height', self.__height)
-            self.__x = kwargs.get('x', self.__x)
-            self.__y = kwargs.get('y', self.__y)
+            self.__width = kwargs.get("width", self.__width)
+            self.__height = kwargs.get("height", self.__height)
+            self.__x = kwargs.get("x", self.__x)
+            self.__y = kwargs.get("y", self.__y)
         if len(args) >= 1:
             self.id = args[0]
         if len(args) >= 2:
@@ -176,9 +175,9 @@ class Rectangle(Base):
         """_summary_"""
 
         return {
-        'x': self.__x,
-        'y': self.__y,
-        'id': self.id,
-        'height': self.__height,
-        'width': self.__width
-    }
+            "x": self.__x,
+            "y": self.__y,
+            "id": self.id,
+            "height": self.__height,
+            "width": self.__width,
+        }
