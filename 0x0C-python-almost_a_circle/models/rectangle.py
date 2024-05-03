@@ -152,3 +152,34 @@ class Rectangle(Base):
 
         return (f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}")
 
+    def update(self, *args):
+        """_summary_
+        """
+
+        self.id = args[0]
+        self.__width = args[1]
+        self.__height = args[2]
+        self.__x = args[3]
+        self.__y = args[4]
+
+
+if __name__ == "__main__":
+
+    r1 = Rectangle(10, 10, 10, 10)
+    print(r1)
+
+    r1.update(89)
+    print(r1)
+
+    r1.update(89, 2)
+    print(r1)
+
+    r1.update(89, 2, 3)
+    print(r1)
+
+    r1.update(89, 2, 3, 4)
+    print(r1)
+
+    r1.update(89, 2, 3, 4, 5)
+    print(r1)
+
