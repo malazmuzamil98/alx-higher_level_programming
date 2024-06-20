@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/env node
 // args count
 const args = process.argv.length - 2;
 
@@ -8,5 +8,5 @@ if (args === 0) {
 } else if (args === 1) {
   console.log('Argument found');
 } else {
-  console.log('Argument found');
+  console.log('Arguments found');
 }
