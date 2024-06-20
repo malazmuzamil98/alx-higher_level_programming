@@ -1,4 +1,4 @@
-#!/usr/bin/env node
+#!/usr/bin/node
 // args length
 if (process.argv[2] === undefined) {
   console.log('No argument');
