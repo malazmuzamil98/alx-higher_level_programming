@@ -1,24 +1,0 @@
---check-hash-based-pycs mode Configure how Python evaluates the up-to-dateness of hash-based .pyc files.
---help [1m[[0;36m-?[0;1m][m Prints the usage for the interpreter executable and exits.
---version [1m[[0;36m-V[0;1m][m Prints the Python version number of the executable and exits. When given twice, print more information about the build.
--?  Prints the usage for the interpreter executable and exits.
--B Don't write _._p_y_c files on import. See also PYTHONDONTWRITEBYTECODE.
--E Ignore environment variables like PYTHONPATH and PYTHONHOME that modify the behavior of the interpreter.
--I Run Python in isolated mode. This also implies --EE and --ss. In isolated mode sys.path contains neither the script's directory nor the user's site-packages directory. All PYTHON* environment variables are ignored, too. Further restrictions may be imposed to prevent the user from injecting malicious code.
--O Remove assert statements and any code conditional on the value of __debug__.
--OO Do --OO and also discard docstrings.
--S Disable the import of the module _s_i_t_e and the site-dependent manipulations of _s_y_s_._p_a_t_h that it entails. Also disable these manipulations if _s_i_t_e is explicitly imported later.
--V  Prints the Python version number of the executable and exits. When given twice, print more information about the build.
--W argument Warning control. Python's warning machinery by default prints warning messages to _s_y_s_._s_t_d_e_r_r.
--X option Set implementation specific option. The following options are available:
--b Issue warnings about str(bytes_instance), str(bytearray_instance) and comparing bytes/bytearray with str. (-bb: issue errors)
--c command Specify the command to execute (see next section). This terminates the option list (following options are passed as arguments to the command).
--d Turn on parser debugging output (for expert only, depending on compilation options).
--h  Prints the usage for the interpreter executable and exits.
--i When a script is passed as first argument or the --cc option is used, enter interactive mode after executing the script or the command. It does not read the $PYTHONSTARTUP file. This can be useful to inspect global variables or a stack trace when a script raises an exception.
--m module-name Searches _s_y_s_._p_a_t_h for the named module and runs the corresponding _._p_y file as a script. This terminates the option list (following options are passed as arguments to the module).
--q Do not print the version and copyright messages. These messages are also suppressed in non-interactive mode.
--s Don't add user site directory to sys.path.
--u Force the stdout and stderr streams to be unbuffered. This option has no effect on the stdin stream.
--v Print a message each time a module is initialized, showing the place (filename or built-in module) from which it is loaded. When given twice, print a message for each file that is checked for when searching for a module. Also provides information on module cleanup at exit.
--x Skip the first line of the source. This is intended for a DOS specific hack only. Warning: the line numbers in error messages will be off by one!

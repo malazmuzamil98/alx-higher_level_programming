@@ -1,49 +1,0 @@
---archive [1m[[0;36m-a[0;1m][m same as -dR --preserve=all
---attributes-only don't copy the file data, just the attributes
---backup[=CONTROL]=make a backup of each existing destination file
---context[=CTX]=like -Z, or if CTX is specified then set the SELinux or SMACK security context to CTX
---copy-contents copy contents of special files when recursive
---dereference [1m[[0;36m-L[0;1m][m always follow symbolic links in SOURCE
---force [1m[[0;36m-f[0;1m][m if an existing destination file cannot be opened, remove it and try again (this option is ignored when the -n option is also used)
---help display this help and exit
---interactive [1m[[0;36m-i[0;1m][m prompt before overwrite (overrides a previous -n option)
---link [1m[[0;36m-l[0;1m][m hard link files instead of copying
---no-clobber [1m[[0;36m-n[0;1m][m do not overwrite an existing file (overrides a previous -i option)
---no-dereference [1m[[0;36m-P[0;1m][m never follow symbolic links in SOURCE
---no-preserve=ATTR_LIST=don't preserve the specified attributes
---no-target-directory [1m[[0;36m-T[0;1m][m treat DEST as a normal file
---one-file-system [1m[[0;36m-x[0;1m][m stay on this file system
---parents use full source file name under DIRECTORY
---preserve[=ATTR_LIST]=preserve the specified attributes (default: mode,ownership,timestamps), if possible additional attributes: context, links, xattr, all
---recursive [1m[[0;36m-r[0;1m][m copy directories recursively
---reflink[=WHEN]=control clone/CoW copies. See below
---remove-destination remove each existing destination file before attempting to open it (contrast with --force)
---sparse=WHEN=control creation of sparse files. See below
---strip-trailing-slashes  remove any trailing slashes from each SOURCE argument
---suffix=SUFFIX=[1m[[0;36m-S[0;1m][m override the usual backup suffix
---symbolic-link [1m[[0;36m-s[0;1m][m make symbolic links instead of copying
---target-directory=DIRECTORY=[1m[[0;36m-t[0;1m][m copy all SOURCE arguments into DIRECTORY
---update [1m[[0;36m-u[0;1m][m copy only when the SOURCE file is newer than the destination file or when the destination file is missing
---verbose [1m[[0;36m-v[0;1m][m explain what is being done
---version  output version information and exit
--H follow command-line symbolic links in SOURCE
--L always follow symbolic links in SOURCE
--P never follow symbolic links in SOURCE
--R copy directories recursively
--S SUFFIX override the usual backup suffix
--T treat DEST as a normal file
--Z set SELinux security context of destination file to default type
--a same as -dR --preserve=all
--b like --backup but does not accept an argument
--d same as --no-dereference --preserve=links
--f if an existing destination file cannot be opened, remove it and try again (this option is ignored when the -n option is also used)
--i prompt before overwrite (overrides a previous -n option)
--l hard link files instead of copying
--n do not overwrite an existing file (overrides a previous -i option)
--p same as --preserve=mode,ownership,timestamps
--r copy directories recursively
--s make symbolic links instead of copying
--t DIRECTORY copy all SOURCE arguments into DIRECTORY
--u copy only when the SOURCE file is newer than the destination file or when the destination file is missing
--v explain what is being done
--x stay on this file system
